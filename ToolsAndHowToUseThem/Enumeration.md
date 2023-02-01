@@ -36,7 +36,16 @@ Here's an example of how you would generate a target list:
 ### Wordlists ###
 [Pentest Wordlists](https://github.com/Twibow/Pentest-WordLists)
 
+https://wordlists.assetnote.io/ - an automatically updates group of worldlists
+`wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH`
+
 The `raft*` worlists in `seclists/Discovery/Web-Content/` have proven to be exceptionally useful
+
+### SMB ###
+`nmap -sV -Pn -v --open -T4 --script smb-enum-shares.nse -p 445 -iL from-gnmapparser-results`
+
+
+
 
 
 
