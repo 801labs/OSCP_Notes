@@ -2,9 +2,9 @@ cewl
 
 Creating Custom Wordlists from a Website
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 cewl -w customwordlist.txt -d 5 -m 7 www.sans.org
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 • -w customwordlist.ext: the -w means write to the file name that follows.  
 

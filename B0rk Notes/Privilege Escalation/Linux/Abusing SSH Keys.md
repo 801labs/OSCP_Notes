@@ -7,15 +7,15 @@ id_rsa = private key
 
 Locating SSH Keys
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 find / -name id_rsa 2> /dev/null
 
 find / -name authorized_keys 2> /dev/null
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 When stealing id_rsa you will need to modify the permissions on the attacker copy before being able to use the id_rsa to connect to the server
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 nano id_rsa
 
 #Paste id_rsa contents to this file and save
@@ -23,7 +23,7 @@ nano id_rsa
 chmod 600 id_rsa
 
 ssh -i id_rsa id_rsa-user@xxx.xxx.xxx.xxx
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Creating your own Authorized Key Pairs for accessing a server without password usage
 

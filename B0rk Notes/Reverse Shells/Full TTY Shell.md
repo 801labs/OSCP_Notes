@@ -1,6 +1,6 @@
 Full TTY Shell
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```bash
 SHELL=/bin/bash script -q /dev/null
       ctrl+z
       
@@ -12,4 +12,5 @@ SHELL=/bin/bash script -q /dev/null
       xterm-256color
       stty rows ### columns ###
       export TERM=xterm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+

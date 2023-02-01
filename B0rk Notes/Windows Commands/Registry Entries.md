@@ -1,6 +1,6 @@
 Registry Entries
 
-~~~
+~~~cmd
 REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v KeyName /t REG_SZ /d "DATA" /f
 ~~~
 

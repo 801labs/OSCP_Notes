@@ -1,6 +1,6 @@
 2-Fuzzing
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~python
 #!/usr/bin/python
 import sys, socket
 from time import sleep
@@ -20,4 +20,5 @@ while True:
 		print "Fuzzing crashed at %s bytes" % str(len(buffer))
 		sys.exit()
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

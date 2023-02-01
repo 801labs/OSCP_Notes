@@ -10,12 +10,13 @@ Rules of Privilege Escalation
 
 Applocker Whitelisted Directories:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 C:\Windows\System32\spool\drivers\color
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Powershell Previous Commands History:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 %Userprofile%\appdata\roaming\microsoft\windows\powershell\psreadline\consolehost_history.txt
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

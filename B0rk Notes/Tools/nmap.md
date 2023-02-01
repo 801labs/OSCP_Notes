@@ -1,6 +1,6 @@
 nmap
 
-~~~
+~~~bash
 nmap -iL target_list.txt -T4 -Pn --top-ports [10 100 1000] --max-retries=2 -oA test.txt
 ~~~
 

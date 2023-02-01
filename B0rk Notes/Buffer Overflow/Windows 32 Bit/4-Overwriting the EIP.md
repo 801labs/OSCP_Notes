@@ -1,6 +1,6 @@
 4-Overwriting the EIP
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~python
 #!/usr/bin/python
 import sys, socket
 
@@ -15,4 +15,5 @@ try:
 except:
 	print "Error Connecting to Server..."
 	sys.exit()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

